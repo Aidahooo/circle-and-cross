@@ -1,0 +1,37 @@
+.table {
+    width: 606px;
+    height: 606px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 3px;
+    border: 1px solid black;
+
+}
+
+.box {
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #ddd;
+}
+
+.circle,
+.cross {
+    font-size: 70px;
+    display: none;
+}
+
+.box.cir>.circle {
+    display: block;
+}
+
+.box.cro>.cross {
+    display: block;
+}
